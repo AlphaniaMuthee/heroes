@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HeroTest {
+public class HeroTest {
 
     @Test
     public void Hero_available() {
