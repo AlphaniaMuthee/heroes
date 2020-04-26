@@ -19,4 +19,17 @@ public class Squad {
         id = mInstances.size();
         heroes = new ArrayList<Hero>();
     }
+    public String getTitle() {
+        return Title;
+    }
+
+    public static ArrayList<Squad> getmInstances() {
+        return mInstances;
+    }
+    public List<Hero> getHeroes() {
+        return heroes;
+    }
+    public void addHero(Hero hero) {
+        heroes.add(hero);
+    }
 }
