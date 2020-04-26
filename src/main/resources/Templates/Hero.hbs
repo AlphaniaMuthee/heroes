@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    <h1>These are the heroes we have</h1>
+    {{#if Heroes}}
+        {{#each Heroes}}
+            <h2>{{name}}</h2>
+            <p>Your superhero, {{Name}}, is {{Age}} years old. Their special power is {{Proficiency}}. However, they have a weakness which is {{Fragility}}</p>
+        {{/each}}
+    {{else}}
+        <p>Oops! We can't seem to find a superhero.</p>
+    {{/if}}
+    <a href="/Squad/Heroes/form"><button>Create another hero</button></a>
+{{/partial}}
+{{> layout.hbs}}
