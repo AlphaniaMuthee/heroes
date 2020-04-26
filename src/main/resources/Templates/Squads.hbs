@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    <h1>Here are your Squads</h1>
+    {{#if Squads}}
+        {{#each Squads}}
+            <p>{{Title}} </p>
+            <p>You can add more heroes to the squad</p>
+            <a href="Heroes/form"><button>More heroes</button></a>
+        {{/each}}
+    {{else}}
+        <p>Sorry! No squad available at the moment</p>
+    {{/if}}
+    <a href="/Squads/create"><button>Create a Squad</button></a>
+{{/partial}}
