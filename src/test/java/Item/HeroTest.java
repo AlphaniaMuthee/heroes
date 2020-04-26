@@ -17,7 +17,6 @@ class HeroTest {
         Hero test = new Hero ("Wolverine", 38, "Retractable bone claws & superhuman strength", "Poor eye-sight");
         assertEquals( 38, test.getAge());
     }
-
     @Test
     public void Hero_Proficiency() {
         Hero test = new Hero ("Wolverine", 38, "Retractable bone claws & superhuman strength", "Poor eye-sight");
