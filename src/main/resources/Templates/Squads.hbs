@@ -2,9 +2,9 @@
     <h1>Here are your Squads</h1>
     {{#if Squads}}
         {{#each Squads}}
-            <p>{{Title}} </p>
+            <p>{{squad.Title}} </p>
             <p>You can add more heroes to the squad</p>
-            <a href="Heroes/form"><button>More heroes</button></a>
+            <a href="Heroes/create"><button>More heroes</button></a>
         {{/each}}
     {{else}}
         <p>Sorry! No squad available at the moment</p>
